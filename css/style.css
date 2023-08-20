@@ -69,6 +69,10 @@ button {
 .fa-moon, .fa-sun {
     font-size: 2rem;
 }
+
+#dark-mode {
+    color: var(--very-dark-blue);
+}
   
 #light-mode {
     display: none;
@@ -132,6 +136,7 @@ button {
     color: var(--very-dark-blue);
     font-weight: 700;
     margin-right: 3px;
+    transition: color 0.5s ease-in-out;
 }
 
 .post-event {
@@ -216,7 +221,7 @@ footer a:hover {
 /* dark mode class for min-width: 640px */
 .main-dark-mode {
     background-color: transparent;
-    border: 1px solid hsl(219, 14%, 63%);
+    border: 1px solid var(--grayish-blue);
 }
 
 
