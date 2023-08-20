@@ -34,6 +34,7 @@ body{
 
 main {
     padding: 2rem 1.5rem;
+    transition: background-color 0.5s ease-in-out;
 }
 
 .notification-heading {
@@ -58,10 +59,27 @@ main {
     transition: opacity 0.3s ease-in-out;   
 }
 
+button {
+    background: transparent;
+    border: none;
+    margin-inline-end: 1rem;
+    cursor: pointer;
+}
+
+.fa-moon, .fa-sun {
+    font-size: 2rem;
+}
+  
+#light-mode {
+    display: none;
+    color: var(--Light-grayish-blue-2);
+}
+
 .mark-as-read {
     font-size: 1.45rem;
     color: var(--dark-grayish-blue);
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+    vertical-align: top;
 }
 
 .unread-notification {
@@ -78,8 +96,8 @@ main {
 .unread {
     border-radius: 1rem;
     background-color: var(--Very-light-grayish-blue);
-    transition: 0.4s ease-in-out;
-}
+    transition: background-color 0.5s ease-in-out;
+}   
 
 .toggle-unread {
     background-color: transparent;
@@ -102,6 +120,8 @@ main {
 
 .chess-img {
     grid-column: 3;
+    justify-self: end;
+    cursor: pointer;
 }
 
 .profile-pic, .chess-img {
@@ -150,7 +170,6 @@ main {
     padding: 1.5rem;
     color: var(--dark-grayish-blue);
     border-radius: 7px;
-    max-width: 30ch;
     margin-top: 1rem;
 }
 
@@ -177,16 +196,39 @@ footer a:hover {
 }
 
 
+/* Dark mode classes */
+.body-and-unread-dark-mode {
+    background: #000;
+}
+
+.pri-heading-and-profile-name-dark-mode {
+    color: var(--Light-grayish-blue-1);
+}
+
+.mark-as-read-private-msg-and-post-event-dark-mode {
+    color: var(--grayish-blue);
+}
+
+.private-msg-dark-mode:hover {
+    background-color: var(--very-dark-blue);
+}
+
+/* dark mode class for min-width: 640px */
+.main-dark-mode {
+    background-color: transparent;
+    border: 1px solid hsl(219, 14%, 63%);
+}
+
+
 /* Responsive Design */
 @media (min-width: 641px) {
-
     body {
         background-color: var(--Very-light-grayish-blue);
     }
 
     main {
         background-color: var(--white);
-        max-width: 640px;
+        max-width: 661px;
         margin: 6rem auto;
         padding-inline: 2.5rem;
         border-radius: 1.5rem;
@@ -198,16 +240,8 @@ footer a:hover {
         color: var(--blue);
     }
 
-    .private-msg {
-        max-width: 100%;
-    }
-
     .private-msg:hover {
         background-color: var(--Light-grayish-blue-1);
         cursor: pointer;
-    }
-
-    .chess-img {
-        justify-self: end;
     }
 }

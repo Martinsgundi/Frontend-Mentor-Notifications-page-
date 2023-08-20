@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontend Mentor | Notifications page</title>
-    <link rel="stylesheet" href="css/style.css">o
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/9e0f615815.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,154 +13,156 @@
 
 </head>
 <body>
-    <main>
-        <div class="notification-heading">
-            <div class="pri-heading">
-                Notifications <span class="no-of-unread">3</span>
-            </div>
-
-            <div class="mark-as-read">
-                Mark all as read
-            </div>
+    <main id="main">
+      <div class="notification-heading">
+        <div class="pri-heading">
+          Notifications <span class="no-of-unread">3</span>
         </div>
 
-        <div class="notification-list">
-
-            <div class="unread-notification">
-                <!-- 1 -->
-                <div class="notification-1 unread notification">
-
-                    <!-- Profile picture -->
-                    <img class="profile-pic" src="assets/images/avatar-mark-webber.webp" alt="Mark Webber"> 
-                    
-                    <!-- Notification content -->
-                    <div class="notification-content">
-                        <span class="profile-name">Mark Webber</span> 
-                        <span class="post-event">reacted to your recent post</span> 
-                        <span class="post-topic">My first tournament today!</span>
-                        <span class="red-unread-dot"><i class="fa-solid fa-circle"></i></span>
-                        <div class="time-of-notification">1m ago</div>
-                    </div>
-                </div>
-
-
-                <!-- 2 -->
-                <div class="notification-2 unread notification">
-
-                    <!-- Profile picture -->
-                    <img class="profile-pic" src="assets/images/avatar-angela-gray.webp"
-                    alt="Angela Gray"> 
-                    
-                    <!-- Notification content -->
-                    <div class="notification-content">
-                        <span class="profile-name">Angela Gray</span>
-                        <span class="post-event">followed you</span>
-                        <span class="red-unread-dot"><i class="fa-solid fa-circle"></i></span>
-                        <div class="time-of-notification">5m ago</div>
-                    </div>
-                </div>
-
-
-                <!-- 3 -->
-                <div class="notification-3 unread notification">
-
-                    <!-- Profile picture -->
-                    <img class="profile-pic" src="assets/images/avatar-jacob-thompson.webp" 
-                    alt="Jacob Thompson"> 
-                    
-                    <!-- Notification content -->
-                    <div class="notification-content">
-                        <span class="profile-name">Jacob Thompson</span>
-                        <span class="post-event">has joined your group </span> 
-                        <span class="chess">Chess Club</span>
-                        <span class="red-unread-dot"><i class="fa-solid fa-circle"></i></span>
-                        <div class="time-of-notification">1 day ago</div>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <div  class="read-notification">
-
-                <!-- 4 -->
-                <div class="notification-4 notification">
-
-                    <!-- Profile picture -->
-                    <img class="profile-pic" src="assets/images/avatar-rizky-hasanuddin.webp"
-                    alt="Rizky Hasanuddin"> 
-                    
-                    <!-- Notification content -->
-                    <div class="notification-content">
-                        <span class="profile-name">Rizky Hasanuddin</span>
-                        <span class="post-event">sent you a private message </span>
-                        <div class="time-of-notification">5 days ago</div>
-                        <div class="private-msg">
-                            Hello, thanks for setting up the Chess Club.
-                            I've been a member for a few weeks now and 
-                            I'm already having lots of fun and improving my game.
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- 5 -->
-                <div class="notification-5 notification">
-
-                    <!-- Profile picture -->
-                    <img class="profile-pic" src="assets/images/avatar-kimberly-smith.webp" 
-                    alt="Kimberly Smith"> 
-                    
-                    <!-- Notification content -->
-                    <div class="notification-content">
-                        <span class="profile-name">Kimberly Smith</span>
-                        <span class="post-event">  commented on your picture</span>
-                        <div class="time-of-notification">1 week ago</div>
-                    </div>
-                    <img class="chess-img" src="assets/images/image-chess.webp" alt="chess">
-                </div>
-
-
-                <!-- 6 -->
-                <div class="notification-6 notification">
-
-                    <!-- Profile picture -->
-                    <img class="profile-pic" src="assets/images/avatar-nathan-peterson.webp" alt="Nathan Peterson"> 
-                    
-                    <!-- Notification content -->
-                    <div class="notification-content">
-                        <span class="profile-name">Nathan Peterson</span> 
-                        <span class="post-event">reacted to your recent post</span>
-                        <span class="post-topic">5 end-game strategies to increase your win rate</span>
-                        <div class="time-of-notification">2 weeks ago</div>
-                    </div>
-                </div>
-
-
-                <!-- 7 -->
-                <div class="notification-7 notification">
-                    <!-- Profile picture -->
-                    <img class="profile-pic" src="assets/images/avatar-anna-kim.webp" alt="Jacob Thompson"> 
-                
-                    <!-- Notification content -->
-                    <div class="notification-content">
-                        <span class="profile-name">Anna Kim</span> 
-                        <span class="post-event">left the group </span> 
-                        <span class="chess">Chess Club</span>
-                        <div class="time-of-notification">2 weeks ago</div>
-                    </div>
-                </div>
-            </div>
+        <div>
+          <button id="dark-mode"><i class="fa-solid fa-moon" title="Enable Dark Mode"></i></button>
+          <button id="light-mode"><i class="fa-solid fa-sun" title="Enable Light Mode"></i></button>
+          <span class="mark-as-read">Mark all as read</span>
         </div>
+      </div>
+
+      <div class="notification-list">
+
+        <div class="unread-notification">
+          <!-- 1 -->
+          <div class="notification-1 unread notification">
+
+            <!-- Profile picture -->
+            <img class="profile-pic" src="assets/images/avatar-mark-webber.webp" alt="Mark Webber"> 
+            
+            <!-- Notification content -->
+            <div class="notification-content">
+              <span class="profile-name">Mark Webber</span> 
+              <span class="post-event">reacted to your recent post</span> 
+              <span class="post-topic">My first tournament today!</span>
+              <span class="red-unread-dot"><i class="fa-solid fa-circle"></i></span>
+              <div class="time-of-notification">1m ago</div>
+            </div>
+          </div>
+
+
+          <!-- 2 -->
+          <div class="notification-2 unread notification">
+
+            <!-- Profile picture -->
+            <img class="profile-pic" src="assets/images/avatar-angela-gray.webp"
+            alt="Angela Gray"> 
+            
+            <!-- Notification content -->
+            <div class="notification-content">
+              <span class="profile-name">Angela Gray</span>
+              <span class="post-event">followed you</span>
+              <span class="red-unread-dot"><i class="fa-solid fa-circle"></i></span>
+              <div class="time-of-notification">5m ago</div>
+            </div>
+          </div>
+
+
+          <!-- 3 -->
+          <div class="notification-3 unread notification">
+
+            <!-- Profile picture -->
+            <img class="profile-pic" src="assets/images/avatar-jacob-thompson.webp" 
+            alt="Jacob Thompson"> 
+            
+            <!-- Notification content -->
+            <div class="notification-content">
+              <span class="profile-name">Jacob Thompson</span>
+              <span class="post-event">has joined your group </span> 
+              <span class="chess">Chess Club</span>
+              <span class="red-unread-dot"><i class="fa-solid fa-circle"></i></span>
+              <div class="time-of-notification">1 day ago</div>
+            </div>
+          </div>
+        </div>
+          
+          
+        <div  class="read-notification">
+
+          <!-- 4 -->
+          <div class="notification-4 notification">
+
+            <!-- Profile picture -->
+            <img class="profile-pic" src="assets/images/avatar-rizky-hasanuddin.webp"
+            alt="Rizky Hasanuddin"> 
+              
+            <!-- Notification content -->
+            <div class="notification-content">
+              <span class="profile-name">Rizky Hasanuddin</span>
+              <span class="post-event">sent you a private message </span>
+              <div class="time-of-notification">5 days ago</div>
+              <div class="private-msg">
+                Hello, thanks for setting up the Chess Club.
+                I've been a member for a few weeks now and 
+                I'm already having lots of fun and improving my game.
+              </div>
+            </div>
+          </div>
+
+
+          <!-- 5 -->
+          <div class="notification-5 notification">
+
+            <!-- Profile picture -->
+            <img class="profile-pic" src="assets/images/avatar-kimberly-smith.webp" 
+            alt="Kimberly Smith"> 
+            
+            <!-- Notification content -->
+            <div class="notification-content">
+              <span class="profile-name">Kimberly Smith</span>
+              <span class="post-event">  commented on your picture</span>
+              <div class="time-of-notification">1 week ago</div>
+            </div>
+            <img class="chess-img" src="assets/images/image-chess.webp" alt="chess">
+          </div>
+
+
+          <!-- 6 -->
+          <div class="notification-6 notification">
+
+            <!-- Profile picture -->
+            <img class="profile-pic" src="assets/images/avatar-nathan-peterson.webp" alt="Nathan Peterson"> 
+            
+            <!-- Notification content -->
+            <div class="notification-content">
+              <span class="profile-name">Nathan Peterson</span> 
+              <span class="post-event">reacted to your recent post</span>
+              <span class="post-topic">5 end-game strategies to increase your win rate</span>
+              <div class="time-of-notification">2 weeks ago</div>
+            </div>
+          </div>
+
+
+          <!-- 7 -->
+          <div class="notification-7 notification">
+            <!-- Profile picture -->
+            <img class="profile-pic" src="assets/images/avatar-anna-kim.webp" alt="Jacob Thompson"> 
+        
+            <!-- Notification content -->
+            <div class="notification-content">
+              <span class="profile-name">Anna Kim</span> 
+              <span class="post-event">left the group </span> 
+              <span class="chess">Chess Club</span>
+              <div class="time-of-notification">2 weeks ago</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- Attribution -->
     <footer>
-        <span>
-            <span class="f-title">Challenge by</span>
-            <a href="https://www.frontendmentor.io/" target="_blank">Frontend Mentor</a> |
-            <span class="f-title">Coded by</span>
-            <a href="https://www.frontendmentor.io/profile/Martinsgundi" target="_blank">Martinsgundi</a>
-        </span>
+      <span>
+        <span class="f-title">Challenge by</span>
+        <a href="https://www.frontendmentor.io/" target="_blank">Frontend Mentor</a> |
+        <span class="f-title">Coded by</span>
+        <a href="https://www.frontendmentor.io/profile/Martinsgundi" target="_blank">Martinsgundi</a>
+      </span>
     </footer>
     
     <script src="Js/script.js"></script>
